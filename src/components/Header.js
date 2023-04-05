@@ -10,14 +10,18 @@ export default function Header({ props }) {
 
       <div className={styles.navlogo}>  
         <NextLink href="/">
-          <img src='/images/Asculta4.png'/>
+          <img src='/images/Asculta1.png'/>
         </NextLink>
       </div>
       
       <div className={styles.navright}>
 
+        <NextLink href="/">
+          <p>Home</p>
+        </NextLink> 
+
         <NextLink href="/about">
-          <p>About</p>
+          <p>About Us</p>
         </NextLink> 
 
         <NextLink href="/technology">

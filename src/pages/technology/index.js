@@ -14,12 +14,8 @@ export default function Technology() {
 
       <Header/>
 
-        <div className={styles.center}>
+        <div className={styles.page}>
           <div className={styles.stack}>
-
-            <div className={styles.center}>
-              <img className={styles.logo} src='/images/Asculta1.png'/>
-            </div>
 
             <div className={styles.center}>
               <h1>Technology</h1>
