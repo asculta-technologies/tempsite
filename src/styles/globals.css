@@ -9,8 +9,8 @@ body {
   position: relative;
 }
 
-p {
-  color: white;
+p, h1, h2 {
+  color: #ffffff;
 }
 
 @font-face {
