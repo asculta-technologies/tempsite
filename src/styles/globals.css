@@ -9,6 +9,10 @@ body {
   position: relative;
 }
 
+p {
+  color: white;
+}
+
 @font-face {
   font-family: 'Nunito';
   src: url('/fonts/Nunito-VariableFont_wght.ttf');
