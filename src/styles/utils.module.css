@@ -2,28 +2,30 @@
 
 }
 
-.page {
-  display: flex;
+.stack {
+  width: 100%;
+  max-width: 1300px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 200px;
 }
-
-.stack {
-  max-width: 1000px;
-  padding-left: 100px;
-  padding-right: 100px;
+.stack > * {
+  margin: 0 auto;
 }
 
 .description {
   font-size: 20px;
 }
 
-.center h1 {
+.stack h1 {
   padding: 50px;
 }
 .description h1 {
-  padding-top: 50px;
+  padding: 50px;
 }
 .description p {
   color: #eeeeee;
@@ -32,7 +34,7 @@
 .logo {
   min-width: 200px;
   max-width: 600px;
-  padding-top: 100px;
+  padding: 100px;
 }
 
 .bio {
@@ -48,6 +50,10 @@
   .bio2 h2 {
     padding-left: 25px;
   }
+  .bio2 p {
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
 }
 
 .portrait {
@@ -58,11 +64,31 @@
   max-width: 225px;
 }
 
-.center {
+.bullet {
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  align-items: top;
+  text-align: left;
+  margin-bottom: -4rem;
+}
+
+.bullet h1 {
+  font-size: 6rem;
+  color: #F5F4FB;
+  padding-right: 50px;
+  margin-top: -3rem;
+}
+
+.bullet h2 {
+  font-size: 2.5rem;
+  color: #7963E3;
+  margin: 0;
+}
+
+.bullet h3 {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -120,4 +146,18 @@
 
 .navright p {
   font-size: 20px;
+}
+
+.awards {
+  max-width: 800px;
+}
+
+.awards h1 {
+  color: #7963E3;
+  margin-bottom: 0;
+}
+
+.awards h2 {
+  color: #ffffff;
+  margin-top: -2rem;
 }

@@ -70,17 +70,18 @@ export default function About() {
               </div>
             </div>
 
-            <h1>Corporate Fellow & Scientific Advisor</h1><br/>
+            <br/><h1>Scientific Advisor</h1><br/>
             <div className={styles.adaptive}>
               <img className={styles.portrait} src='/images/Johan.jpg'/>
               <div className={styles.bio2}>
                 <h2>Johan Carlsson</h2>
+                <p>Corporate Fellow & Patent Inventor</p>
                 <ul>
                   <li>PhD, Fusion Plasma Physics @ KTH Royal Institute of Technology</li>
                   <li>MSc, Engineering Physics @ Lund University</li>
                   <li>20+ years of experience in computational plasma physics</li>
                   <li>Published 30+ papers in peer-reviewed journals</li>
-                  <li>PI for DOE FES, NE and ASCR SBIR projects with funding totaling over $2M</li>
+                  <li>PI for DoE FES, NE and ASCR SBIR projects with funding totaling over $2M</li>
                   <li>Inventor of Asculta Technologies’ ultrasonic plasma acoustic emissions transducer</li>
                 </ul>
               </div>
