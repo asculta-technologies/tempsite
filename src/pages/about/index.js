@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/utils.module.css'
 import Header from '../../components/Header.js';
+import Portrait from '../../components/Portrait.js';
 
 export default function About() {
   return (
@@ -14,60 +15,46 @@ export default function About() {
 
       <Header/>
 
-        <div className={styles.page}>
-          <div className={styles.stack}>
+        <div className={styles.stack}>
 
-            <div className={styles.center}>
-              <h1>Meet Our Team</h1>
-            </div>
+            <h1>Meet Our Team</h1>
 
             <h1>Founders</h1>
 
             <div className={styles.adaptive}>
-              <div className={styles.bio}>
-                <img className={styles.portrait} src='/images/Matthew.jpg'/>
-                <h2>Matthew Banaag</h2>
-                <p>
-                  CEO, Systems Engineer
-                  <br/><br/>
-                  <i>Electrical & Computer Engineering @ Princeton University</i>
-                  <br/><br/>
-                  [EMAIL]
-                </p>
-              </div>
-              <div className={styles.bio}>
-                <img className={styles.portrait} src='/images/Yiying.jpg'/>
-                <h2>Yiying Zhang</h2>
-                <p>
-                  CTO, Electrical Engineer
-                  <br/><br/>
-                  <i>Electrical & Computer Engineering @ Princeton University</i>
-                  <br/><br/>
-                  yiying.zhang@princeton.edu
-                </p>
-              </div>
-              <div className={styles.bio}>
-                <img className={styles.portrait} src='/images/Xabier.jpg'/>
-                <h2>Xabier Sardina</h2>
-                <p>
-                  Head of Business 
-                  <br/><br/>
-                  <i>Economics @ Princeton University</i>
-                  <br/><br/>
-                  [EMAIL]
-                </p>
-              </div>
-              <div className={styles.bio}>
-                <img className={styles.portrait} src='/images/Xuan.jpg'/>
-                <h2>Xuan Lin</h2>
-                <p>
-                  Head of Marketing
-                  <br/><br/>
-                  <i>Computer Science @ Princeton University</i>
-                  <br/><br/>
-                  [EMAIL]
-                </p>
-              </div>
+
+              <Portrait 
+                name='Matthew Banaag'
+                image='/images/Matthew.jpg'
+                title='CEO, Systems & Software Engineer'
+                major='Electrical & Computer Engineering @ Princeton University'
+                email='matthew.banaag@princeton.edu'
+              />
+
+              <Portrait 
+                name='Yiying Zhang'
+                image='/images/Yiying.jpg'
+                title='CTO, Electrical Engineer'
+                major='Electrical & Computer Engineering @ Princeton University'
+                email='yiying.zhang@princeton.edu'
+              />
+
+              <Portrait 
+                name='Xabier Sardina'
+                image='/images/Xabier.jpg'
+                title='Head of Business'
+                major='Economics @ Princeton University'
+                email='xsardina@princeton.edu'
+              />
+
+              <Portrait
+                name='Xuan Lin'
+                image='images/Xuan.jpg'
+                title='Head of Marketing'
+                major='Computer Science @ Princeton University'
+                email='xuan.lin@princeton.edu'
+              />
+
             </div>
 
             <br/><h1>Scientific Advisor</h1><br/>
@@ -87,7 +74,6 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
       </main>
     </>
   )

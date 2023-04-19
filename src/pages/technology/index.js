@@ -12,15 +12,24 @@ export default function Technology() {
       </Head>
       <main className={styles.main}>
 
-      <Header/>
+       <Header/>
 
-        <div className={styles.page}>
-          <div className={styles.stack}>
+        <div className={styles.center}>
 
-            <div className={styles.center}>
-              <h1>Technology</h1>
+            <h1>Technology</h1>
+
+            <img className={styles.image} src="/images/Solution.png"/>
+
+            <div className={styles.technology}>
+
+              <h2>Patented Tech from Princeton University</h2>
+
+              <h2>Tech Funded by the US Department of Energy</h2>
+
+              <h2>20+ years experience in Plasma Physics</h2>
+              
             </div>
-          </div>
+
         </div>
       </main>
     </>
